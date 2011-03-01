@@ -1,0 +1,5 @@
+gfortran -c *.f
+ar -r libblas.a *.o
+ranlib libblas.a
+cp libblas.a $SAGE_LOCAL/lib
+
